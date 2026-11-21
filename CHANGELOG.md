@@ -93,7 +93,7 @@ conversion (FX quote → conversion → SETTLED) and the deposit lifecycle.
 
 ### Added
 
-- Initial release, matching the capabilities of [airwallex-python](https://github.com/Cyvid7-Darus10/airwallex-python) v0.2.0.
+- Initial release, matching the capabilities of [airwallex-python](https://github.com/cyruspastelero/airwallex-python) v0.2.0.
 - `airwallex.New` client with functional options (`WithClientID`, `WithAPIKey`,
   `WithEnv`, `WithBaseURL`, `WithAPIVersion`, `WithOnBehalfOf`, `WithTimeout`,
   `WithMaxRetries`, `WithHTTPClient`); credentials default to the
@@ -129,11 +129,11 @@ conversion (FX quote → conversion → SETTLED) and the deposit lifecycle.
   loopback), credential redaction in `String()`/`GoString()`, typed errors
   for non-JSON responses, custom `http.Client` support without mutation.
 
-[Unreleased]: https://github.com/Cyvid7-Darus10/airwallex-go/compare/v0.2.5...HEAD
-[0.2.5]: https://github.com/Cyvid7-Darus10/airwallex-go/compare/v0.2.4...v0.2.5
-[0.2.4]: https://github.com/Cyvid7-Darus10/airwallex-go/compare/v0.2.3...v0.2.4
-[0.2.3]: https://github.com/Cyvid7-Darus10/airwallex-go/compare/v0.2.2...v0.2.3
-[0.2.2]: https://github.com/Cyvid7-Darus10/airwallex-go/compare/v0.2.1...v0.2.2
-[0.2.1]: https://github.com/Cyvid7-Darus10/airwallex-go/compare/v0.2.0...v0.2.1
-[0.2.0]: https://github.com/Cyvid7-Darus10/airwallex-go/compare/v0.1.0...v0.2.0
-[0.1.0]: https://github.com/Cyvid7-Darus10/airwallex-go/releases/tag/v0.1.0
+[Unreleased]: https://github.com/cyruspastelero/airwallex-go/compare/v0.2.5...HEAD
+[0.2.5]: https://github.com/cyruspastelero/airwallex-go/compare/v0.2.4...v0.2.5
+[0.2.4]: https://github.com/cyruspastelero/airwallex-go/compare/v0.2.3...v0.2.4
+[0.2.3]: https://github.com/cyruspastelero/airwallex-go/compare/v0.2.2...v0.2.3
+[0.2.2]: https://github.com/cyruspastelero/airwallex-go/compare/v0.2.1...v0.2.2
+[0.2.1]: https://github.com/cyruspastelero/airwallex-go/compare/v0.2.0...v0.2.1
+[0.2.0]: https://github.com/cyruspastelero/airwallex-go/compare/v0.1.0...v0.2.0
+[0.1.0]: https://github.com/cyruspastelero/airwallex-go/releases/tag/v0.1.0

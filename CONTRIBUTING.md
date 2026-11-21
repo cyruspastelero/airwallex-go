@@ -5,7 +5,7 @@ Thanks for helping improve the unofficial Airwallex Go SDK!
 ## Setup
 
 ```bash
-git clone https://github.com/Cyvid7-Darus10/airwallex-go
+git clone https://github.com/cyruspastelero/airwallex-go
 cd airwallex-go
 go test ./...
 ```
@@ -29,7 +29,7 @@ All four must pass; CI runs them on the last three Go releases.
   Tests use `httptest.Server` — no network calls.
 - **Ground new endpoints in the official spec** (`https://www.airwallex.com/docs/api/schema.json`)
   rather than guessing field names, and keep behavior in parity with
-  [airwallex-python](https://github.com/Cyvid7-Darus10/airwallex-python).
+  [airwallex-python](https://github.com/cyruspastelero/airwallex-python).
 - Response types embed `APIResource` and are additive-only — type the
   documented fields, let unknown fields live in `.Raw`.
 - Money-moving `Create` calls must go through `idempotentBody` so a
@@ -41,4 +41,4 @@ All four must pass; CI runs them on the last three Go releases.
 
 1. Bump `Version` in `transport.go`, update `CHANGELOG.md`.
 2. Tag: `git tag v<version> && git push --tags` — Go modules publish via tags.
-3. Verify the new version appears on [pkg.go.dev](https://pkg.go.dev/github.com/Cyvid7-Darus10/airwallex-go).
+3. Verify the new version appears on [pkg.go.dev](https://pkg.go.dev/github.com/cyruspastelero/airwallex-go).

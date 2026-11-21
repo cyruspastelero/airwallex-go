@@ -1,3 +1,3 @@
-module github.com/Cyvid7-Darus10/airwallex-go
+module github.com/cyruspastelero/airwallex-go
 
 go 1.23.0

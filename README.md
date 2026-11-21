@@ -2,15 +2,15 @@
 
 **Unofficial** Go SDK for the [Airwallex API](https://www.airwallex.com/docs/api) — payouts, FX, balances, global accounts, beneficiaries, payment acceptance, issuing, and webhooks.
 
-[![CI](https://github.com/Cyvid7-Darus10/airwallex-go/actions/workflows/ci.yml/badge.svg)](https://github.com/Cyvid7-Darus10/airwallex-go/actions/workflows/ci.yml)
-[![Go Reference](https://pkg.go.dev/badge/github.com/Cyvid7-Darus10/airwallex-go.svg)](https://pkg.go.dev/github.com/Cyvid7-Darus10/airwallex-go)
+[![CI](https://github.com/cyruspastelero/airwallex-go/actions/workflows/ci.yml/badge.svg)](https://github.com/cyruspastelero/airwallex-go/actions/workflows/ci.yml)
+[![Go Reference](https://pkg.go.dev/badge/github.com/cyruspastelero/airwallex-go.svg)](https://pkg.go.dev/github.com/cyruspastelero/airwallex-go)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Status: Beta](https://img.shields.io/badge/status-beta-orange.svg)](#status)
 
 > [!IMPORTANT]
 > This is an **unofficial, community-maintained** library. It is **not** affiliated with, endorsed by, or supported by Airwallex Pty Ltd — "Airwallex" is their trademark, used here only to describe compatibility. The SDK is in **beta**: the public interface may change before v1.0, so pin your version. For vendor-supported tooling, use the [official Node.js SDK](https://www.npmjs.com/package/@airwallex/node-sdk).
 
-Airwallex's only official server-side SDK is Node.js. This library brings the same developer experience to Go, mirroring the [airwallex-python](https://github.com/Cyvid7-Darus10/airwallex-python) SDK:
+Airwallex's only official server-side SDK is Node.js. This library brings the same developer experience to Go, mirroring the [airwallex-python](https://github.com/cyruspastelero/airwallex-python) SDK:
 
 - **One idiomatic client** — services as fields, `context.Context` on every call, zero third-party dependencies (standard library only)
 - **Automatic authentication** — token fetched on first use and refreshed before expiry; no manual login calls
@@ -26,7 +26,7 @@ Airwallex's only official server-side SDK is Node.js. This library brings the sa
 ## Installation
 
 ```bash
-go get github.com/Cyvid7-Darus10/airwallex-go
+go get github.com/cyruspastelero/airwallex-go
 ```
 
 Requires Go 1.23+. Releases follow [semantic versioning](#status); see the [changelog](CHANGELOG.md).
@@ -36,7 +36,7 @@ Requires Go 1.23+. Releases follow [semantic versioning](#status); see the [chan
 Create API credentials in the Airwallex web app under **Developer → API keys**, then:
 
 ```go
-import "github.com/Cyvid7-Darus10/airwallex-go"
+import "github.com/cyruspastelero/airwallex-go"
 
 client, err := airwallex.New(
     airwallex.WithClientID("your_client_id"), // or set AIRWALLEX_CLIENT_ID
@@ -161,7 +161,7 @@ for page != nil {
 Verify and parse incoming notifications (get the secret when you create the webhook endpoint):
 
 ```go
-import "github.com/Cyvid7-Darus10/airwallex-go/webhooks"
+import "github.com/cyruspastelero/airwallex-go/webhooks"
 
 func handle(w http.ResponseWriter, r *http.Request) {
     payload, _ := io.ReadAll(r.Body) // raw bytes — do not re-serialise
@@ -305,7 +305,7 @@ AIRWALLEX_CLIENT_ID=... AIRWALLEX_API_KEY=... go run ./examples/payout
 | `client.WebhookEndpoints` | `Create`, `Retrieve`, `Update`, `Delete`, `List`, `All` |
 | `webhooks` package | `VerifySignature`, `ConstructEvent` (+ `WithTolerance` variants) |
 
-Coverage matches the [airwallex-python](https://github.com/Cyvid7-Darus10/airwallex-python) SDK v0.2.0 — contributions welcome for the remaining areas (disputes, payment consents, linked accounts, scale/platform APIs).
+Coverage matches the [airwallex-python](https://github.com/cyruspastelero/airwallex-python) SDK v0.2.0 — contributions welcome for the remaining areas (disputes, payment consents, linked accounts, scale/platform APIs).
 
 ## Status
 

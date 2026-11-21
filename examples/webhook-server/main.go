@@ -14,7 +14,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/Cyvid7-Darus10/airwallex-go/webhooks"
+	"github.com/cyruspastelero/airwallex-go/webhooks"
 )
 
 func main() {

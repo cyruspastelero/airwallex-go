@@ -13,7 +13,7 @@ import (
 	"log"
 	"time"
 
-	airwallex "github.com/Cyvid7-Darus10/airwallex-go"
+	airwallex "github.com/cyruspastelero/airwallex-go"
 )
 
 func main() {

@@ -5,7 +5,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/Cyvid7-Darus10/airwallex-go/webhooks"
+	"github.com/cyruspastelero/airwallex-go/webhooks"
 )
 
 // Verify and parse a webhook inside an HTTP handler. Always pass the raw

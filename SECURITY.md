@@ -4,7 +4,7 @@
 
 Please do **not** open a public issue for security problems. Email
 **cyrus@pastelero.ph** with the details, or use GitHub's
-[private vulnerability reporting](https://github.com/Cyvid7-Darus10/airwallex-go/security/advisories/new).
+[private vulnerability reporting](https://github.com/cyruspastelero/airwallex-go/security/advisories/new).
 You should receive a response within 72 hours.
 
 ## Supported versions

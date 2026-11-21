@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"log"
 
-	airwallex "github.com/Cyvid7-Darus10/airwallex-go"
+	airwallex "github.com/cyruspastelero/airwallex-go"
 )
 
 // Construct a client for the demo (sandbox) environment. Credentials can

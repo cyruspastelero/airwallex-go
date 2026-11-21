@@ -52,7 +52,7 @@
 //
 // The webhooks subpackage verifies webhook signatures with constant-time
 // comparison and replay protection; see
-// github.com/Cyvid7-Darus10/airwallex-go/webhooks.
+// github.com/cyruspastelero/airwallex-go/webhooks.
 //
 // # Disclaimer
 //
